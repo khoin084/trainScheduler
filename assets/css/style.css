@@ -1,0 +1,39 @@
+/**
+*Developer:Khoi Nguyen
+*Date: 3/17/2017
+*UCSD Code Bootcamp: Homework #7
+**/
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+  background-color: #ADFF2F;
+}
+
+.panel {
+  border: solid 1px black; 
+  font-family: Open Sans;
+}
+
+.panel > .panel-body {
+  background-color: #1E90FF;
+  font-family: Bitter;
+  font-size: 2em;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.form-control {
+  width: 97%;
+}
+

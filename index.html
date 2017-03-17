@@ -1,0 +1,78 @@
+<!--
+*Developer:Khoi Nguyen
+*Date: 3/17/2017
+*UCSD Code Bootcamp: Homework #7
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Scheduler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!--Link after boostrap so that it does not overwrite my styles.-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!--Linking google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
+  <!-- Link to Moment.js should go here -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!--Linking javascript-->
+  <script type="text/javascript" src="assets/javascript/logic.js"></script>
+  <!-- LINK TO FIREBASE GOES HERE -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  
+  
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1><b>Anytime is Train Time</b></h1>
+    <h3>Choo choo. Chee chee.</h3>
+  </div>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body text-center">
+        Current Train Schedule</div>
+        <table style="width:100%" id="addRow">
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th> 
+          <th>Frequency (min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+        <!--Place holder for new row of DB-->
+      </table>  
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body text-center">
+        Add Train</div>
+        <form> 
+          <div class="form-group">
+            <label for="trainName">Train Name</label>
+            <input class="form-control" id="tname" placeholder="">
+            <!--
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            -->
+            <label for="destination">Destination</label>
+            <input class="form-control" id="dest" placeholder="">  
+            <label for="destination">First Train Time (HH:mm - military time)</label>
+            <input class="form-control" id="firstTime" placeholder=""> 
+            <label for="fequency">Frequency (min)</label>
+            <input class="form-control" id="freq" placeholder=""> 
+            <br>
+            <button class="btn btn-md btn-success" id="submitBtn"> Submit </button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+
+  
+
+</html>
